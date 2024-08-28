@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Inter:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="img/Logo.png" alt="logo">
+    </header>
+    <main>
+       
+            <form class="form_section">
+                <textarea class="form_input" id="miTextarea" name="mensaje" cols="30" rows="10" placeholder="Ingresa el texto aquí"></textarea>
+                <div class="alert_msj">
+                    <img src="img/Group.png" alt="alerta">
+                    <span>Solo letras minusculas y sin acentos</span>
+                </div>
+                <div class="submit_container">
+                    <input class="form_btn" type="button" value="Encriptar" id="encriptarBtn">
+                    <input class="form_btn--secundary" type="button" value="Desencriptar" id="desencriptarBtn">
+                </div>
+            </form>
+            <div class="result_wrapper">
+                <aside class="result">            
+                    <div class="loader hidden" ></div>
+                    <div class="result_container">
+                        <img src="img/Muneco.png" alt="muneco" class="result_img">
+                        <h3 class="result_title" >Ningún mensaje fue encontrado</h3>
+                        <p class="result_text"></p>
+                    </div>
+                </aside>
+                <div class="copy_button_container">
+                    <button class="result__btn form_btn form_btn--secundary" id="copiarBtn">Copiar</button>
+                </div>
+            
+        </div>
+    </main> 
+    <script src="./encriptador.js"></script>
+</body>
+<footer class="alert_msj">
+    <p>Norbely Ramirez © 2024</p>
+    
+</footer>
+</html>
