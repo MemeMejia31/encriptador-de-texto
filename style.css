@@ -142,8 +142,8 @@ main {
     margin-bottom: 2rem; 
     width: 250px;
     height: 250px;
-    overflow: auto; /* Agrega una barra de desplazamiento si es necesario */
-    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total */
+    overflow: auto; 
+    box-sizing: border-box; 
 }
 .copy_button_container {
     display: flex;
@@ -154,14 +154,7 @@ main {
     margin: 0; 
 }
 
-.pielogo{
-    align-items: center;
-    width: 50%; 
-    height: auto;
-    max-width: 50%; 
-    object-fit: contain; 
-}
-footer {
+.footer {
     display: flex;
     flex-direction: column; 
     align-items: center; 
